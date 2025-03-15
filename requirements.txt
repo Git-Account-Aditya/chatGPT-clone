@@ -1,0 +1,6 @@
+flask
+langchain_ollama
+langchain_core
+flask_cors
+gunicorn
+
