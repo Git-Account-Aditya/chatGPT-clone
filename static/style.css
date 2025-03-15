@@ -1,0 +1,113 @@
+:root{
+    --main-surface-primary: #212121;
+    --main-surface-background: rgba(33, 33, 33, .9);
+    --message-surface: rgba(50, 50, 50, .85);
+
+    /* sidebar variables */
+    --sidebar-surface-primary: #171717;
+    --sidebar-surface-secondary: #212121;
+    --sidebar-surface-tertiary: #2f2f2f;
+    --sidebar-title-primary: hsla(0, 0%, 94%, .5);
+    --sidebar-surface: #2b2b2b;
+    --sidebar-body-primary: #ededed;
+    --sidebar-icon: #a4a4a4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-surface-primary);
+    font-family:system-ui;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chat-area{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    /*border: 1px solid green;*/
+}
+
+.chat-history{
+    height: 70vh;
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ededed;
+    padding: 10px;
+    letter-spacing: 1.9px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color) transparent;
+    position: relative;
+}
+
+.user-message {
+    background: var(--message-surface);
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    border-top-right-radius: 0;
+}
+
+.start-msg{
+    font-size: xx-large;
+    font-weight: 500;
+    color: #ededed;
+}
+
+.hidden-class{
+    display:none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.user-input-area{
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: var(--message-surface);
+    border-radius: 35px;
+
+}
+
+#user-input {
+    height: 8vh;
+    width: 49vw;
+    /*border: 1px solid blue;*/
+    background-color: var(--message-surface);
+    border: 1px solid var(--message-surface);
+    /*border: none;*/
+    color: #ededed;
+    font-size: 15px;
+    text-align: left;
+    font-family:system-ui;
+    letter-spacing: 1.9px;
+    font-weight: 200;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#user-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent; /* Optional: Removes border change on focus */
+
+}
+
