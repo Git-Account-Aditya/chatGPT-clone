@@ -12,7 +12,6 @@ llama2_model = OllamaLLM(model='llama2:latest')
 
 # Store chat history
 messages = [
-    SystemMessage(content="You are a professional Doctor.Help the human by giving them best advice.")
 ]
 
 # Home route (Loads the frontend)
